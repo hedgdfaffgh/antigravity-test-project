@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity MCP Test Portal</title>
+  <!-- 引入 Google 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- 引入 Marked 用于渲染 Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- 样式设计 -->
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at 50% 50%, #12131c 0%, #08090d 100%);
+      --panel-bg: rgba(20, 22, 37, 0.45);
+      --panel-border: rgba(255, 255, 255, 0.07);
+      --panel-glow: rgba(99, 102, 241, 0.15);
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --primary-glow: rgba(99, 102, 241, 0.4);
+      --accent: #10b981;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --code-bg: rgba(15, 17, 28, 0.9);
+      --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: 'Fira Code', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* 酷炫流光背景微动画 */
+    body::before {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+      top: -100px;
+      left: -100px;
+      opacity: 0.15;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: -1;
+    }
+    body::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+      bottom: -150px;
+      right: -150px;
+      opacity: 0.15;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* 顶部导航 */
+    header {
+      background: rgba(8, 9, 13, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--panel-border);
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.1rem;
+      box-shadow: 0 0 15px var(--primary-glow);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #fff 0%, var(--text-muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border);
+      color: var(--text-main);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 0 15px var(--primary-glow);
+      transform: translateY(-1px);
+    }
+
+    /* 主布局 */
+    main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 通用玻璃面板 */
+    .glass-panel {
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: inset 0 1px 1px rgba(255,255,255,0.05), 0 10px 30px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    /* Markdown 容器 */
+    .markdown-container h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1px solid var(--panel-border);
+      padding-bottom: 0.75rem;
+    }
+
+    .markdown-container p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+    }
+
+    .markdown-container code {
+      font-family: var(--font-mono);
+      background: var(--code-bg);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* 右侧仪表盘 */
+    .dashboard-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .explorer-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* 模拟文件树 */
+    .file-tree {
+      background: rgba(10, 11, 18, 0.5);
+      border: 1px solid var(--panel-border);
+      border-radius: 12px;
+      overflow: hidden;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      transition: background 0.2s ease;
+      cursor: pointer;
+    }
+
+    .file-item:last-child {
+      border-bottom: none;
+    }
+
+    .file-item:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .file-icon {
+      font-size: 1.1rem;
+    }
+
+    .file-name {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+    }
+
+    .file-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.05);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    .dir-children {
+      padding-left: 2rem;
+      background: rgba(0, 0, 0, 0.15);
+      border-left: 2px solid var(--panel-border);
+    }
+
+    /* 页脚 */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--panel-border);
+      background: rgba(8, 9, 13, 0.5);
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon">A</div>
+      <div class="logo-text">Antigravity Portal</div>
+    </div>
+    <div class="nav-actions">
+      <a href="https://github.com/hedgdfaffgh/antigravity-test-project" class="btn" target="_blank">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        GitHub 仓库
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 左侧：Markdown 渲染面板 -->
+    <section class="glass-panel markdown-container" id="markdown-viewer">
+      <h1>README.md</h1>
+      <div id="content">加载中...</div>
+    </section>
+
+    <!-- 右侧：文件浏览器与状态 -->
+    <section class="dashboard-panel">
+      <!-- 状态卡片 -->
+      <div class="glass-panel" style="padding: 1.5rem;">
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          <span>GitHub Pages 正常运行中</span>
+        </div>
+        <h2 style="font-size: 1.5rem; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 700;">antigravity-test-project</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">这是通过 Antigravity 部署的自动化 Pages 展示，支持静态资源浏览与 README.md 内容实时渲染。</p>
+      </div>
+
+      <!-- 文件列表树 -->
+      <div class="glass-panel" style="padding: 1.5rem;">
+        <div class="explorer-title">
+          <span>文件目录浏览器</span>
+          <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">branch: main</span>
+        </div>
+        <div class="file-tree" id="file-tree-container">
+          <!-- 静态生成的文件列表 -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://github.com/deepmind" target="_blank">Google DeepMind Antigravity</a> | © 2026</p>
+  </footer>
+
+  <script>
+    // 渲染 README.md
+    fetch('./README.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML = '<p style="color:#ef4444;">加载 README.md 失败。</p>';
+      });
+
+    // 静态文件树结构
+    const files = [
+      { name: ".gitignore", type: "config" },
+      { name: "README.md", type: "markdown" },
+      { name: "VPN搭建教程.md", type: "markdown" },
+      { name: "cert_convert.py", type: "code" },
+      { name: "create_chrome_symlink.bat", type: "script" },
+      { name: "deploy_qwave.ps1", type: "script" },
+      { name: "deployment_plan.html", type: "web" },
+      { name: "fix_chrome_symlink.bat", type: "script" },
+      { name: "fix_qwave.ps1", type: "script" },
+      { name: "get_local_ip.bat", type: "script" },
+      { name: "github_mcp_wrapper.bat", type: "script" },
+      { name: "har_analysis_output.txt", type: "text" },
+      { name: "parse_har.py", type: "code" },
+      { name: "restart_proxy.ps1", type: "script" },
+      { name: "restore_chat_worker.ps1", type: "script" },
+      { name: "run_php.bat", type: "script" },
+      { name: "search_apis.py", type: "code" },
+      { name: "search_smali.py", type: "code" },
+      { name: "security_audit_report.html", type: "web" },
+      { name: "start_dev.bat", type: "script" },
+      { name: "start_ngrok.bat", type: "script" },
+      { name: "taobao_test_guide.html", type: "web" },
+      { name: "tun_diag.ps1", type: "script" },
+      { name: "vpn_monitor.ps1", type: "script" },
+      { name: "zipalign.py", type: "code" },
+      { 
+        name: "openclaw-zero-token", 
+        type: "directory", 
+        children: [
+          { name: "Dockerfile", type: "config" },
+          { name: "package.json", type: "config" },
+          { name: "entry.ts", type: "code" },
+          { name: "README.md", type: "markdown" },
+          { name: "CHANGELOG.md", type: "markdown" }
+        ]
+      }
+    ];
+
+    const icons = {
+      directory: "📁",
+      markdown: "📝",
+      code: "🐍",
+      script: "⚙️",
+      web: "🌐",
+      text: "📄",
+      config: "🛠️"
+    };
+
+    function renderTree(items, container, isNested = false) {
+      const parentDiv = document.createElement('div');
+      if (isNested) parentDiv.className = 'dir-children';
+      
+      items.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'file-item';
+        
+        const typeIcon = icons[item.type] || "📄";
+        
+        itemDiv.innerHTML = `
+          <div class="file-info">
+            <span class="file-icon">${typeIcon}</span>
+            <span class="file-name" style="${item.type === 'directory' ? 'font-weight:600;color:#a5b4fc;' : ''}">${item.name}</span>
+          </div>
+          <span class="file-meta">${item.type}</span>
+        `;
+        
+        parentDiv.appendChild(itemDiv);
+        
+        if (item.type === 'directory' && item.children) {
+          // 直接递归渲染子目录
+          renderTree(item.children, parentDiv, true);
+        }
+      });
+      container.appendChild(parentDiv);
+    }
+
+    renderTree(files, document.getElementById('file-tree-container'));
+  </script>
+</body>
+</html>
