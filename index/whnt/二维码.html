@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单二维码</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        p, button {
+            font-size: 20px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>订单详情</h1>
+    <p>订单金额: {{order_amount}}</p>
+    <p>商户订单号: {{ORDER_NUMBER}}</p>
+    <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{qr_code_url}}" alt="订单二维码">
+    </div>
+    <button onclick="copyQRCode()">点击复制二维码</button>
+
+    <script>
+        function copyQRCode() {
+            const img = document.querySelector('.qr-code img');
+            console.log('二维码图片元素:', img);
+            fetch(img.src)
+                .then(response => {
+                    console.log('获取图片响应:', response);
+                    return response.blob();
+                })
+                .then(blob => {
+                    const reader = new FileReader();
+                    reader.onloadend = function() {
+                        const base64data = reader.result;
+                        console.log('Base64数据:', base64data);
+                        if (navigator.clipboard) {
+                            navigator.clipboard.writeText(base64data).then(() => {
+                                alert('二维码图片的Base64数据已复制到剪贴板！');
+                            }).catch(err => {
+                                console.error('复制失败:', err);
+                            });
+                        } else {
+                            console.error('浏览器不支持剪贴板API');
+                        }
+                    }
+                    reader.readAsDataURL(blob);
+                }).catch(err => {
+                    console.error('获取图片或读取数据失败:', err);
+                });
+        }
+    </script>
+</body>
+</html> 

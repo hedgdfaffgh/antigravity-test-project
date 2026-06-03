@@ -1,0 +1,14 @@
+{
+    "name": "your-project-name",
+    "description": "Your project description",
+    "require": {
+        "php": ">=7.4",
+        "chillerlan/php-qrcode": "^4.3",
+        "khanamiryan/qrcode-detector-decoder": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zxing\\": "vendor/khanamiryan/qrcode-detector-decoder/lib/"
+        }
+    }
+}

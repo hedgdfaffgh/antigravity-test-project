@@ -1,0 +1,509 @@
+﻿Total requests: 154
+
+=== 鍩熷悕缁熻 ===
+   54x  mtop.jiaoyimao.com
+   23x  collect.alipay.com
+    8x  acs.m.taobao.com
+    7x  arms-retcode.aliyuncs.com
+    6x  m.jiaoyimao.com
+    5x  180.153.232.133
+    3x  dypnsapi-dualstack.aliyuncs.com
+    3x  198.18.1.12:443
+    3x  ynuf.aliapp.org
+    3x  go.mavrtracktor.com
+    3x  sheikah-tower-gateway.aligames.com
+    3x  mclient.alipay.com
+    3x  captcha.alipay.com
+    3x  play.google.com
+    2x  gw.alicdn.com
+    2x  a.jiaoyimao.com
+    2x  o.alicdn.com
+    2x  hm.baidu.com
+    2x  fourier.alibaba.com
+    2x  mobilegw.alipay.com
+    2x  tscenter.alipay.com
+    1x  120.78.74.132:8080
+    1x  app-dl.9game.cn
+    1x  zconfig.alibabausercontent.com
+    1x  g.alicdn.com
+    1x  cdn.aligames.com
+    1x  audid-api.taobao.com
+    1x  staticcdn.duckduckgo.com
+    1x  img.doppiocdn.com
+    1x  gw.alipayobjects.com
+
+
+=== 鍏抽敭 mtop API 鎺ュ彛 ===
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] GET mtop.client.mudp.update
+  URL: https://acs.m.taobao.com/gw/mtop.client.mudp.update/1.0/?data=%7B%22dexpatchVersion%22%3A%220%22%2C%22identifier%22%3A%22jym_android%22%2C%22appVersio
+  Response API: mtop.client.mudp.update
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['hasUpdate']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.home.splash.screen.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.home.splash.screen.get/1.0/
+  Response API: mtop.jym.appserver.home.splash.screen.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.config.queryappinitconfig
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.config.queryappinitconfig/1.0/
+  Response API: mtop.ieu.member.passport.config.queryappinitconfig
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'data', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.config.queryappareacodeconfig
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.config.queryappareacodeconfig/1.0/
+  Response API: mtop.ieu.member.passport.config.queryappareacodeconfig
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'data', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.login.autologin
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.login.autologin/1.0/
+  Response API: mtop.ieu.member.passport.login.autologin
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'data', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.home.getresourcepkg
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.home.getresourcepkg/1.0/
+  Response API: mtop.com.jym.layout.hsf.home.getresourcepkg
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['offlineTime', 'onlineTime', 'pkgMd5', 'pkgSize', 'pkgUrl', 'versionId']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.config.querysimloginconfig
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.config.querysimloginconfig/1.0/
+  Response API: mtop.ieu.member.passport.config.querysimloginconfig
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'data', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.imserver.user.blacklist.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.imserver.user.blacklist.get/1.0/
+  Response API: mtop.jym.appserver.imserver.user.blacklist.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.imserver.offiaccount.init
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.imserver.offiaccount.init/1.0/
+  Response API: mtop.jym.imserver.offiaccount.init
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.platformhome.gethomelayout
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.platformhome.gethomelayout/1.1/
+  Response API: mtop.com.jym.layout.hsf.platformhome.gethomelayout
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['atmosphere', 'bannerList', 'gameArea', 'isGrayPage', 'kingKongList', 'partners', 'searchBar', 'securityCard', 'slogan']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.home.splash.screen.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.home.splash.screen.get/1.0/
+  Response API: mtop.jym.appserver.home.splash.screen.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.report.deviceinfo
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.report.deviceinfo/1.0/
+  Response API: mtop.jym.appserver.report.deviceinfo
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.config.protocol.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.config.protocol.get/1.0/
+  Response API: mtop.jym.appserver.config.protocol.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.user.device.info.set
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.user.device.info.set/1.0/
+  Response API: mtop.jym.appserver.user.device.info.set
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.gamezone.getcategorylist
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.gamezone.getcategorylist/1.0/
+  Response API: mtop.com.jym.layout.hsf.gamezone.getcategorylist
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['gameIconUrl', 'gameId', 'gameName', 'list']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.member.biz.favorite.goods.getnotifywithoutgoods
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.member.biz.favorite.goods.getnotifywithoutgoods/1.0/
+  Response API: mtop.jym.member.biz.favorite.goods.getnotifywithoutgoods
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.component.gethomebubblefloatinglayer
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.component.gethomebubblefloatinglayer/1.0/
+  Response API: mtop.com.jym.layout.hsf.component.gethomebubblefloatinglayer
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.context.meta.save
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.context.meta.save/1.0/
+  Response API: mtop.jym.appserver.context.meta.save
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.home.popup.config.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.home.popup.config.get/1.0/
+  Response API: mtop.jym.appserver.home.popup.config.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['androidVersion', 'configId', 'davinciLabelId', 'davinciName', 'davinciPriority', 'displayCondition', 'displayFrequency', 'effectStatus', 'offlineTime', 'offlineType', 'onlineTime', 'onlineType', 'picTargetLink', 'picUrl']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.common.upgrade.check
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.common.upgrade.check/3.0/
+  Response API: mtop.jym.appserver.common.upgrade.check
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['needUpgrade']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.user.binddeviceidanduid
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.user.binddeviceidanduid/1.0/
+  Response API: mtop.jym.appserver.user.binddeviceidanduid
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.home.root.popup.config.get
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.home.root.popup.config.get/1.0/
+  Response API: mtop.jym.appserver.home.root.popup.config.get
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.component.getfloatingball
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.component.getfloatingball/1.0/
+  Response API: mtop.com.jym.layout.hsf.component.getfloatingball
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.jymgoods.goods.list.getclientlist
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.jymgoods.goods.list.getclientlist/2.0/
+  Response API: mtop.jym.jymgoods.goods.list.getclientlist
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['hideDefaultOption', 'list', 'multiChoiceSupported']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.goodslist.getgoodslist
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.goodslist.getgoodslist/1.0/
+  Response API: mtop.com.jym.layout.hsf.goodslist.getgoodslist
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['deliverComps', 'extData', 'hasNextPage', 'recid', 'scenarioId', 'totalCnt', 'track']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.jymgoods.goods.list.getsearchsort
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.jymgoods.goods.list.getsearchsort/1.0/
+  Response API: mtop.jym.jymgoods.goods.list.getsearchsort
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.jymgoods.goods.list.getpricecondition
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.jymgoods.goods.list.getpricecondition/1.0/
+  Response API: mtop.jym.jymgoods.goods.list.getpricecondition
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['conditionType', 'displayType', 'groupHits', 'groupKey', 'groupName', 'remark', 'searchConditionRespDTOList']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.jymgoods.goods.list.getsearchconditionv2
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.jymgoods.goods.list.getsearchconditionv2/1.0/
+  Response API: mtop.jym.jymgoods.goods.list.getsearchconditionv2
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['feedBackUrl', 'respListList', 'searchConditionStyle', 'showConditionNavigation']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.home.getonekeysoldinfowithfatigue
+  URL: https://mtop.jiaoyimao.com/gw/mtop.com.jym.layout.hsf.home.getonekeysoldinfowithfatigue/1.0/
+  Response API: mtop.com.jym.layout.hsf.home.getonekeysoldinfowithfatigue
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.category.filter.server.getbycondition
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.category.filter.server.getbycondition/1.0/
+  Response API: mtop.jym.appserver.category.filter.server.getbycondition
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] GET mtop.common.getTimestamp
+  URL: https://acs.m.taobao.com/gw/mtop.common.getTimestamp/*
+  Response API: mtop.common.getTimestamp
+  Response ret: ['SUCCESS::鎺ュ彛璋冪敤鎴愬姛']
+  Response data keys: ['t']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.passport.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.passport.client.log/1.0/
+  Response API: mtop.ieu.member.passport.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'msg']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.alibaba.emas.publish.update.resource.get
+  URL: https://acs.m.taobao.com/gw/mtop.alibaba.emas.publish.update.resource.get/1.0/
+  Response API: mtop.alibaba.emas.publish.update.resource.get
+  Response ret: ['99::褰撳墠app鏃犳搷浣滄潈闄?璇疯仈绯荤鐞嗗憳!']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.component.getguidebannerbypagemtopv2
+  URL: https://acs.m.taobao.com/gw/mtop.com.jym.layout.hsf.component.getguidebannerbypagemtopv2/1.0/
+  Response API: mtop.com.jym.layout.hsf.component.getguidebannerbypagemtopv2
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.component.getfloatingball
+  URL: https://acs.m.taobao.com/gw/mtop.com.jym.layout.hsf.component.getfloatingball/1.0/
+  Response API: mtop.com.jym.layout.hsf.component.getfloatingball
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] GET mtop.ecbp.item.center.item.querydynamicitempagedetail
+  URL: https://acs.m.taobao.com/gw/mtop.ecbp.item.center.item.querydynamicitempagedetail/1.0/?data=%7B%22itemId%22%3A%221705917712344697%22%7D&type=originalj
+  Response API: mtop.ecbp.item.center.item.querydynamicitempagedetail
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['extraErrMsg', 'result', 'stateCode']
+  Result keys: ['components', 'sortedComponents']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.com.jym.layout.hsf.goodslist.getgoodslistentry
+  URL: https://acs.m.taobao.com/gw/mtop.com.jym.layout.hsf.goodslist.getgoodslistentry/1.0/
+  Response API: mtop.com.jym.layout.hsf.goodslist.getgoodslistentry
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['result']
+  Result keys: ['gameIcon', 'gameName', 'goodsListUrl']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.aligame.trade.center.order.getconfirmorderconfig
+  URL: https://acs.m.taobao.com/gw/mtop.aligame.trade.center.order.getconfirmorderconfig/1.0/
+  Response API: mtop.aligame.trade.center.order.getconfirmorderconfig
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['confirmOrderPageType', 'uid']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.common.base64log.report
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.common.base64log.report/1.0/
+  Response API: mtop.jym.appserver.common.base64log.report
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.ieu.member.client.log
+  URL: https://mtop.jiaoyimao.com/gw/mtop.ieu.member.client.log/1.0/
+  Response API: mtop.ieu.member.client.log
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: ['code', 'fail']
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.common.base64log.report
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.common.base64log.report/1.0/
+  Response API: mtop.jym.appserver.common.base64log.report
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST mtop.jym.appserver.common.base64log.report
+  URL: https://mtop.jiaoyimao.com/gw/mtop.jym.appserver.common.base64log.report/1.0/
+  Response API: mtop.jym.appserver.common.base64log.report
+  Response ret: ['SUCCESS::璋冪敤鎴愬姛']
+  Response data keys: []
+
+
+=== JiaoYiMao ecbp-api 鎺ュ彛 ===
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] GET m.jiaoyimao.com/ecbp-api/item/geSellerRecommendItems
+  Query: itemId=1705917712344697
+  Response: {"success": true, "result": {"track": {"abtestId": null, "experimentId": null, "scenarioId": "452", "recId": "4fb56716d50b40ad9415039a9908afb1699612e7"}, "recommendGoodsList": []}}
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST m.jiaoyimao.com/ecbp-api/checkBuyHealth
+  Body: {}
+  Response: {}
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] GET m.jiaoyimao.com/api2/user/accountComplianceVerification
+  Query: sceneId=1&pid=4&modelType=jym_android
+  Response: {"stateCode": 200, "data": {"adult": true, "needMinorsIntercept": false, "needRealNameAuth": false, "needRealPeopleAuth": false, "firstAuthRealPeople": true}}
+
+鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+[200] POST m.jiaoyimao.com/ecbp-api/createOrderForFrontend
+  Body: {"pid":4,"bizCode":"com.aligame.jym.ioscharge","commonInfo":{"ua":"jym_mobile (Linux; U; Android12; zh_CN; PJJ110; Build/V417IR; 78d42c3e-1c05-4f67-a73c-d7e887fbd58d; 540x960) com.jym.mall/9361/JYM_10
+  Response: {"success": true, "stateCode": "SUCCESS", "subCode": null, "subExtraErrMsg": null, "result": {"orderId": "7255830245681504", "jumpPayTypeUrl": "https://www.jiaoyimao.com/buyer/selECBPPay/order/7255830245681504", "createPayOrderRespDTO": {"payMode": "APP", "payInfo": "alipay_sdk=alipay-sdk-java-4.40.
+
+
+Saved 78 API entries to C:\Users\Administrator\Desktop\gdfha.top\api_analysis.json

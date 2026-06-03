@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "sessionId": "pt110125ksa013889a7i9p9qk4jnzcf58uet9o8lu1",
+  "refreshToken": "a240a99d8d50519883e40a7f91bda3f2",
+  "cookies": {
+    "ieu_member_biz_id": "jiaoyimao",
+    "ieu_member_sid": "pt110125ksa013889a7i9p9qk4jnzcf58uet9o8lu1",
+    "ieu_member_appcode": "JYM_H5",
+    "ieu_member_passport_id": "2881771324191311562",
+    "ieu_member_uid": "1771324191392168",
+    "jym_session_id": "pt110125ksa013889a7i9p9qk4jnzcf58uet9o8lu1"
+  },
+  "userInfo": {
+    "avatar": "https://gw.alicdn.com/imgextra/i1/O1CN01fUODkW1kHsBZcNUkU_!!6000000004659-2-tps-720-720.png",
+    "bizId": "jiaoyimao",
+    "localId": "1771324191392168",
+    "mobile": "177******80",
+    "nickName": "豌豆upuxnv",
+    "passportId": "2881771324191311562"
+  }
+}

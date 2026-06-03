@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <style>
+        .arrow {
+            font-size: 80px;
+            animation: move 1s infinite;
+            display: inline-block;
+        }
+
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <p class="center" style="font-size: 36pt; text-align: center; line-height: 1;">
+        <span class="red" style="font-family: 黑体; font-size: 77.3333px; color: rgb(255, 0, 0);">请勿超时-修改号码</span>
+    </p>
+    <p id="countdown" class="center" style="font-size: 36pt; text-align: center; line-height: 1;">
+        <span style="font-family: 黑体; font-size: 68px;">支付倒计时<span id="timer">300</span>秒</span>
+    </p>
+    <p class="center" style="font-size: 36pt; text-align: center; line-height: 1;">
+        <span style="font-family: 黑体; font-size: 68px;">订单金额：<span id="orderAmount">{{order_amount}}</span></span>
+    </p>
+    <p id="copyRegionText" class="center" style="text-align: center; line-height: 1; margin-right: 0cm;">
+        <span style="font-family: 黑体; font-size: 68px;">地区：<span id="copyRegion" style="color: rgb(255, 0, 0);">{{region}}</span>复制</span>
+    </p>
+    <p id="copyNumberText" class="center" style="text-align: center; line-height: 1; margin-right: 0cm;">
+        <span style="font-family: 黑体; font-size: 68px;">号码：<span id="copyNumber" style="color: rgb(255, 0, 0);">{{number}}</span>复制</span>
+    </p>
+    <p id="paymentLink" class="center" style="text-align: center; line-height: 2; margin-right: 0cm;">
+        <span style="font-family: 黑体; font-size: 68px; color: rgb(255, 0, 0);">点击这里跳转支付</span>
+    </p>
+    <div style="display: flex; justify-content: center;">
+        <img src="https://i.imgs.ovh/2023/10/10/X2ne5.jpeg" alt="图片描述" style="max-width: 100%; display: block; margin: auto;">
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img src="/uploads/20231007/2023100703112174683.jpg" style="max-width:100%;" border="0">
+    </div>
+    <script>
+    document.getElementById('copyRegionText').onclick = function() {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('copyRegion'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('地区已复制到剪贴板');
+    };
+
+    document.getElementById('copyNumberText').onclick = function() {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('copyNumber'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('号码已复制到剪贴板');
+    };
+
+    var countdown = 300;
+    var countdownTimer = setInterval(function() {
+        countdown--;
+        document.getElementById('timer').innerText = countdown;
+        if (countdown <= 0) {
+            clearInterval(countdownTimer);
+            alert('支付时间已过请勿支付');
+            window.close();
+        }
+    }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            font-size: 27pt; /* 统一设置字体大小为 25pt */
+            text-align: center;
+            line-height: 1;
+        }
+        .arrow {
+            font-size: 60px; /* 设置箭头字体大小为 100px */
+            animation: move 1s infinite;
+            display: inline-block;
+            margin-top: -30px; /* 调整箭头与上方文本的间距 */
+        }
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+        .alipay-button {
+            font-size: 25pt;
+            font-family: 黑体;
+            color: white;
+            background-color: #0044cc;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .alipay-button:hover {
+            background-color: #003399;
+        }
+    </style>
+</head>
+<body>
+    <p id="orderProcessing" class="center"><span class="red" style="font-family: 黑体; color: rgb(255, 0, 0);">超时支付不回调</span></p>
+    <p id="countdown" class="center"><span style="font-family: 黑体;">倒计时<span id="timer">90</span>秒</span></p>
+    <p class="center"><span style="font-family: 黑体;">订单金额：30</span></p>
+<script>
+    // 倒计时功能
+    let timer = 90;
+    const countdownElement = document.getElementById('timer');
+    const paymentInstructions = document.getElementById('paymentInstructions');
+    const alipayButton = document.getElementById('alipayButton');
+
+    const countdown = setInterval(() => {
+        if (timer > 0) {
+            timer--;
+            countdownElement.textContent = timer;
+        } else {
+            clearInterval(countdown);
+            paymentInstructions.style.display = 'block';
+            alipayButton.style.display = 'block';
+        }
+    }, 1000);
+</script>
+    <div id="paymentInstructions" class="center">
+        <p class="center"><span class="red" style="font-family: 黑体; color: rgb(255, 0, 0);">请点击支付</span></p>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+    </div>
+    <div id="alipayButton" class="center" style="margin-top: 20px;">
+        <a href="https://mclient.alipay.com/h5pay/landing/index.html?h5_request_token=RZ42ydrI3HCLFvQXNct4EJ5S8qInH5mobilecashierRZ42&query_params=alipay_exterface_invoke_assign_sign%3D_bo_w_mxy%252B_ep_rvo6_h785_yi2fpq_v_z_w0x_ug_q_gdgm%252F6_o36%252Fpkunl2ev_l_tp_k_a%253D%253D%26awid%3DRZ42mp1Hgjs8xaARIXIV5WmxU4xIwgmobileclientgwRZ42%26alipay_exterface_invoke_assign_target%3Dinvoke_c9188463c02530ed547b36925f2860bd&x_requested_with=com.android.browser&referer=https%3A%2F%2Fpay.aligames.com%2F&app_name=mc&targetDispatchSystem=unitradeprod&serverParams=emlkPTI5O25kcHQ9YjZjZDtjYz15" class="alipay-button">支付宝支付</a>
+    </div>
+</body>
+</html>

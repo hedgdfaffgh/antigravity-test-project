@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .login-container {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .input-group {
+    margin-bottom: 15px; /* consistent spacing between input groups */
+    background: #f0f0f0;
+    border-radius: 4px;
+    position: relative;
+  }
+  .input-group input {
+    width: 100%; /* inputs take full width of their container */
+    padding: 15px 10px; /* increased padding for better visual appeal */
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px; /* rounded borders */
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* Adjustments for the captcha container to match the input groups */
+  .captcha-container {
+    position: relative;
+    padding: 15px 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This ensures space between elements */
+  }
+  .captcha-container input {
+    flex-grow: 1; /* allows the input to grow as needed */
+    margin-right: 10px; /* space between input and image */
+    width: 30%; /* set width to 50% */
+    height: 22px; /* increased height */
+    padding: 10px; /* adjusted padding */
+    font-size: 16px; /* maintained font size */
+  }
+  .captcha-container img {
+    height: 46px; /* same height as the input */
+    width: 40%; /* set width to 50% */
+  }
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px; /* consistent spacing above the button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <form method="post" action="login.php">
+      <div class="input-group">
+        <input type="text" id="nickname" name="nickname" placeholder="请输入昵称">
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="请输入密码">
+        <span class="toggle-password" onclick="togglePasswordVisibility()">👁</span>
+      </div>
+      <div class="captcha-container">
+        <input type="text" name="captcha" placeholder="验证码">
+        <img src="captcha.php" alt="验证码">
+        <a href="#" onclick="refreshCaptcha()">换一张</a>
+      </div>
+      <button type="submit">登录</button>
+    </form>
+  </div>
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById('password');
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+    } else {
+      passwordInput.type = 'password';
+    }
+  }
+
+  function refreshCaptcha() {
+    var captchaImage = document.querySelector('.captcha-container img');
+    captchaImage.src = 'captcha.php?' + new Date().getTime();
+  }
+</script>
+</body>
+</html>

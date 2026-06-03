@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            text-align: center; /* 保持按钮居中 */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center; /* 添加输入框内文本居中 */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px; 
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><input type="text" id="name" placeholder="名称"><br></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="amount" placeholder="金额"><br></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="merchantOrderId" placeholder="商户订单号"><br></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="redirectToServer()">确认</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="extra" placeholder="网址"><br></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="redirectToLink()">链接</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        // 重定向到服务器的函数
+        function redirectToServer() {
+            var name = document.getElementById('name').value;
+            var amount = document.getElementById('amount').value;
+            var merchantOrderId = document.getElementById('merchantOrderId').value;
+            var url = 'https://gdfha.top/qlruovrn.php';
+            
+            // 创建一个 FormData 对象
+            var formData = new FormData();
+            formData.append('name', name);
+            formData.append('amount', amount);
+            formData.append('merchantOrderId', merchantOrderId);
+
+            // 使用 fetch 发送 POST 请求
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            }).then(response => response.text())
+            .then(data => {
+                console.log('服务器响应:', data);
+                try {
+                    var jsonResponse = JSON.parse(data);
+                    if (jsonResponse.response) {
+                        var responseObj = JSON.parse(jsonResponse.response);
+                        if (responseObj.redirectUrl) {
+                            var redirectUrl = responseObj.redirectUrl.replace(/\\\//g, '/');
+                            document.getElementById('extra').value = redirectUrl;
+                            console.log('重定向 URL 已更新:', redirectUrl);
+                            // 更新 URL 参数
+                            updateUrlParameter('website_url', redirectUrl);
+                        } else {
+                            console.error('未在 response 中找到 redirectUrl');
+                        }
+                    } else {
+                        console.error('未收到有效的 response');
+                    }
+                } catch (error) {
+                    console.error('解析响应时出错:', error);
+                }
+            }).catch(error => {
+                console.error('发送请求时出错:', error);
+            });
+        }
+
+        // 更新 URL 参数的函数
+        function updateUrlParameter(key, value) {
+            var url = new URL(window.location.href);
+            url.searchParams.set(key, value);
+            window.history.replaceState(null, '', url.toString());
+        }
+
+        // 获取URL参数的函数
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) == variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return false;
+        }
+
+        // 显示URL的函数
+        function displayUrl() {
+            var websiteUrl = getQueryVariable("website_url");
+            if (websiteUrl) {
+                document.getElementById('extra').value = websiteUrl;
+            }
+        }
+
+        // 重定向到链接的函数
+        function redirectToLink() {
+            var extraUrl = document.getElementById('extra').value;
+            if (extraUrl) { // 确保 extraUrl 存在
+                window.location.href = extraUrl;
+            } else {
+                console.error('extraUrl 为空');
+            }
+        }
+
+        // 页面加载时显示URL
+        window.onload = function() {
+            displayUrl();
+        };
+    </script>
+</body>
+</html>

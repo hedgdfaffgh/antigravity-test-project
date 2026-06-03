@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP订单管理系统 - 部署流程图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00d4ff;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 10px;
+        }
+
+        .flow-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 30px;
+            height: 30px;
+            background: #00d4ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #1a1a2e;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .step-desc {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            font-size: 2em;
+            color: #00d4ff;
+        }
+
+        .architecture {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .arch-box {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .arch-box.blue {
+            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+        }
+
+        .arch-box.purple {
+            background: linear-gradient(135deg, #cc2b5e 0%, #753a88 100%);
+        }
+
+        .arch-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .arch-items {
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        .arch-items li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .arch-items li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+        }
+
+        .config-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .config-table th,
+        .config-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .config-table th {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+        }
+
+        .config-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .success {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .info {
+            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+
+        .print-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .print-btn {
+                display: none;
+            }
+
+            .section {
+                background: white;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .architecture {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 PHP订单管理系统 - 部署流程图</h1>
+
+        <!-- 环境准备 -->
+        <div class="section">
+            <h2>📋 环境准备</h2>
+            <div class="info">
+                <strong>本地环境要求：</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>PHP 7.4+ (推荐 PHP 8.0)</li>
+                    <li>MySQL 5.7+ 或 MariaDB 10.2+</li>
+                    <li>Composer (PHP依赖管理)</li>
+                    <li>cURL扩展</li>
+                    <li>GD库 (图片处理)</li>
+                </ul>
+            </div>
+            <div class="success" style="margin-top: 15px;">
+                <strong>服务器环境要求：</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Linux服务器 (CentOS/Ubuntu/Debian)</li>
+                    <li>Nginx或Apache Web服务器</li>
+                    <li>PHP-FPM 7.4+</li>
+                    <li>MySQL 5.7+ 或 MariaDB 10.2+</li>
+                    <li>SSL证书 (HTTPS)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 本地测试流程 -->
+        <div class="section">
+            <h2>🖥️ 本地测试流程</h2>
+            <div class="flow-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">安装环境</div>
+                    <div class="step-desc">安装PHP、MySQL、Composer</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">导入数据库</div>
+                    <div class="step-desc">创建数据库并导入SQL文件</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">配置环境变量</div>
+                    <div class="step-desc">设置数据库连接等参数</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-title">启动服务</div>
+                    <div class="step-desc">启动PHP内置服务器或Web服务</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-title">测试验证</div>
+                    <div class="step-desc">访问 http://localhost 测试功能</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 系统架构 -->
+        <div class="section">
+            <h2>🏗️ 系统架构</h2>
+            <div class="architecture">
+                <div class="arch-box">
+                    <div class="arch-title">📱 前端层</div>
+                    <ul class="arch-items">
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>用户界面</li>
+                        <li>表单提交</li>
+                        <li>验证码</li>
+                    </ul>
+                </div>
+                <div class="arch-box blue">
+                    <div class="arch-title">⚙️ 业务逻辑层</div>
+                    <ul class="arch-items">
+                        <li>用户认证</li>
+                        <li>订单管理</li>
+                        <li>回调处理</li>
+                        <li>卡密系统</li>
+                    </ul>
+                </div>
+                <div class="arch-box purple">
+                    <div class="arch-title">💾 数据层</div>
+                    <ul class="arch-items">
+                        <li>MySQL数据库</li>
+                        <li>订单视图</li>
+                        <li>用户数据</li>
+                        <li>配置存储</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 服务器部署流程 -->
+        <div class="section">
+            <h2>☁️ 服务器部署流程</h2>
+            <div class="flow-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">购买服务器</div>
+                    <div class="step-desc">选择云服务商并购买</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">配置环境</div>
+                    <div class="step-desc">安装LNMP/LEMP环境</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">上传代码</div>
+                    <div class="step-desc">上传项目文件到服务器</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-title">配置域名</div>
+                    <div class="step-desc">解析域名并配置Nginx</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-title">配置SSL</div>
+                    <div class="step-desc">申请并配置HTTPS证书</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-title">测试上线</div>
+                    <div class="step-desc">全面测试后正式上线</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关键配置 -->
+        <div class="section">
+            <h2>⚙️ 关键配置说明</h2>
+            <table class="config-table">
+                <thead>
+                    <tr>
+                        <th>配置项</th>
+                        <th>说明</th>
+                        <th>示例值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DB_HOST</td>
+                        <td>数据库服务器地址</td>
+                        <td>localhost 或 127.0.0.1</td>
+                    </tr>
+                    <tr>
+                        <td>DB_USERNAME</td>
+                        <td>数据库用户名</td>
+                        <td>root</td>
+                    </tr>
+                    <tr>
+                        <td>DB_PASSWORD</td>
+                        <td>数据库密码</td>
+                        <td>your_password</td>
+                    </tr>
+                    <tr>
+                        <td>DB_NAME</td>
+                        <td>数据库名称</td>
+                        <td>ovrn</td>
+                    </tr>
+                    <tr>
+                        <td>DB_PORT</td>
+                        <td>数据库端口</td>
+                        <td>3306</td>
+                    </tr>
+                    <tr>
+                        <td>BASE_URL</td>
+                        <td>网站基础URL</td>
+                        <td>gdfha.top</td>
+                    </tr>
+                    <tr>
+                        <td>SECRET_KEY</td>
+                        <td>签名密钥</td>
+                        <td>your_secret_key</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="warning">
+                <strong>⚠️ 安全提示：</strong>环境变量文件(.env)不应上传到版本控制系统中，确保密码和密钥的安全。
+            </div>
+        </div>
+
+        <!-- 淘宝对接说明 -->
+        <div class="section">
+            <h2>🛒 淘宝开放平台对接</h2>
+            <div class="info">
+                <strong>对接流程：</strong>
+                <ol style="margin: 10px 0 0 20px;">
+                    <li>在淘宝开放平台创建应用并获取AppKey和AppSecret</li>
+                    <li>配置回调URL指向服务器的回调处理接口</li>
+                    <li>实现签名验证确保请求来源可靠</li>
+                    <li>处理订单状态变更通知</li>
+                    <li>完成订单金额核对和确认</li>
+                </ol>
+            </div>
+            <div class="code-block" style="margin-top: 15px;">
+                // 淘宝回调处理示例代码结构
+                $sign = $_POST['sign'];
+                $orderId = $_POST['order_id'];
+                $amount = $_POST['amount'];
+
+                // 1. 验证签名
+                // 2. 查询订单信息
+                // 3. 更新本地订单状态
+                // 4. 返回成功响应
+            </div>
+        </div>
+
+        <!-- 常见问题 -->
+        <div class="section">
+            <h2>❓ 常见问题</h2>
+            <div class="warning">
+                <strong>Q: 数据库连接失败怎么办？</strong><br>
+                A: 检查数据库服务是否启动，确认用户名密码是否正确，检查防火墙是否允许3306端口。
+            </div>
+            <div class="warning">
+                <strong>Q: 验证码不显示怎么办？</strong><br>
+                A: 确保PHP GD库已安装，检查arial.ttf字体文件是否存在。
+            </div>
+            <div class="warning">
+                <strong>Q: 回调通知收不到怎么办？</strong><br>
+                A: 检查服务器是否能公网访问，确认回调URL可访问，查看防火墙和安全组设置。
+            </div>
+            <div class="warning">
+                <strong>Q: 如何在本地测试回调？</strong><br>
+                A: 使用内网穿透工具(如ngrok)将本地服务暴露到公网。
+            </div>
+        </div>
+
+        <!-- 下一步操作 -->
+        <div class="section">
+            <h2>📌 下一步操作</h2>
+            <div class="success">
+                <ol style="margin: 10px 0 0 20px;">
+                    <li>在本地安装PHP开发环境 (XAMPP/WAMP/宝塔面板)</li>
+                    <li>导入数据库SQL文件创建数据表</li>
+                    <li>配置数据库连接信息</li>
+                    <li>启动本地服务进行功能测试</li>
+                    <li>测试无误后购买服务器进行部署</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">🖨️ 打印/导出PDF</button>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单二维码</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>订单详情</h1>
+    <p>订单金额: {{order_amount}}</p>
+    <p>商户订单号: {{ORDER_NUMBER}}</p>
+    <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{qr_code_url}}" alt="订单二维码">
+    </div>
+</body>
+</html> 

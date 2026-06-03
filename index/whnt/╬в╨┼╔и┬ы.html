@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付订单</title>
+    <style>
+        .center {
+            font-size: 27pt;
+            text-align: center;
+            line-height: 1;
+        }
+        .arrow {
+            font-size: 60px;
+            animation: move 1s infinite;
+            display: inline-block;
+            margin-top: -30px;
+        }
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <p id="orderProcessing" class="center"><span class="red" style="font-family: 黑体; color: rgb(255, 0, 0);">订单生成中请勿关闭</span></p>
+    <p id="countdown" class="center"><span style="font-family: 黑体;">计时<span id="timer">0</span>秒</span></p>
+    <p class="center"><span style="font-family: 黑体;">订单金额：{{order_amount}}</span></p>
+<script>
+    var countdown = 0;
+    var countdownTimer = setInterval(function() {
+        countdown++;
+        document.getElementById('timer').innerText = countdown;
+
+        var orderNumber = '{{ORDER_NUMBER}}';
+        var timestamp = Date.now();
+
+        var data = {
+            orderNumber: orderNumber,
+            timestamp: timestamp
+        };
+
+        fetch('get-payment-url.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                var paymentUrl = data.paymentUrl;
+                if (paymentUrl && paymentUrl.startsWith('http')) {
+                    document.getElementById('paymentInstructions').style.display = 'block';
+                    document.getElementById('qrCode').style.display = 'block';
+                    document.getElementById('qrCodeImage').src = paymentUrl;
+                    document.getElementById('orderProcessing').style.display = 'none';
+                    clearInterval(countdownTimer);
+                } else {
+                    document.getElementById('paymentInstructions').style.display = 'none';
+                    document.getElementById('qrCode').style.display = 'none';
+                }
+            } else {
+                console.error('No payment URL found:', data.message);
+                document.getElementById('paymentInstructions').style.display = 'none';
+                document.getElementById('qrCode').style.display = 'none';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching payment URL:', error);
+            document.getElementById('paymentInstructions').style.display = 'none';
+            document.getElementById('qrCode').style.display = 'none';
+        });
+    }, 4000);
+</script>
+    <div id="paymentInstructions" class="center" style="display: none;">
+        <p class="center"><span class="red" style="font-family: 黑体; color: rgb(255, 0, 0);">请微信截图扫码</span></p>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+        <div class="arrow">↓</div>
+    </div>
+    <div id="qrCode" class="center" style="margin-top: 20px; display: none;">
+        <img id="qrCodeImage" class="qr-code" src="" alt="支付二维码">
+    </div>
+</body>
+</html>

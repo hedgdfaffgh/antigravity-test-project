@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "start_server.py", line 9, in <module>
+  File "E:\”Ô“Ù\CapsWriter-Offline\core_server.py", line 5, in <module>
+    from config_server import ServerConfig as Config, __version__
+  File "E:\”Ô“Ù\CapsWriter-Offline\config_server.py", line 11
+    addr = '0.0.0.0'
+IndentationError: unexpected indent
+[PYI-9112:ERROR] Failed to execute script 'start_server' due to unhandled exception!

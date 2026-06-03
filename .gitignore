@@ -1,0 +1,40 @@
+# Database backup (sensitive data)
+*154_37_220_31*.sql
+*.sql
+
+# Private keys / keystores
+*.keystore
+*.jks
+
+# Java, build tools and decompiled contents
+jdk21/
+build-tools/
+build-tools.zip
+jdk21.zip
+apk_out/
+jiaoyimao_decompiled/
+platform-tools/
+platform-tools.zip
+sqlite-tools/
+sqlite-tools.zip
+uber-apk-signer.jar
+apktool.jar
+
+# Binaries and executables
+frida-server
+frida-server-17
+frida-server-17.xz
+frida-server.xz
+*.apk
+*.idsig
+
+# Charles SSL certificates
+*.cer
+
+# IDE / VS Code configurations
+.vscode/
+.agents/
+
+# Logs and environment configs
+*.log
+.env
